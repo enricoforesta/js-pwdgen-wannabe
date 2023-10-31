@@ -24,16 +24,20 @@
 
 // Collego la variabile al id dell html
 
-const elementRiepilogo=document.getElementById("riepilogo");
+const elementRiepilogo = document.getElementById("riepilogo");
+
+elementRiepilogo.innerHTML = "LA TUA PASSWORD: ";
 
 // Controllo se funzionante
 
-console.log(elementRiepilogo)
+console.log(elementRiepilogo);
 
 // Inserisco gli input del prompt all interno della pagina html
 
-elementRiepilogo.innerHTML=prompt("Inserisci il tuo nome") + prompt("Inserisci il tuo cognome") + prompt("Inserisci il tuo colore preferito")+"17"
+// elementRiepilogo.innerHTML+=prompt("Inserisci il tuo nome") + prompt("Inserisci il tuo cognome") + prompt("Inserisci il tuo colore preferito")+"17"
+
+elementRiepilogo.innerHTML += prompt("Inserisci il tuo nome") + prompt("Inserisci il tuo cognome") + prompt("Inserisci il tuo colore preferito") + Math.round(Math.random() * 1000)
 
 // Controllo se funzionante
 
-console.log(elementRiepilogo)
+console.log(elementRiepilogo);
