@@ -1,43 +1,26 @@
-/use script/
-
-// // faccio le variabili collegati al id nell html
-// const elementNome=document.getElementById("nome");
-// const elementCognome=document.getElementById("cognome");
-// const elementColore=document.getElementById("colore");
-
-// // Controllo se collegati e funzionanti
-// console.log(elementNome)
-// console.log(elementCognome)
-// console.log(elementColore)
-
-// // faccio le variabili del prompt
-// elementNome.innerHTML=prompt("Inserisci il tuo nome")
-// elementCognome.innerHTML=prompt("Inserisci il tuo cognome")
-// elementColore.innerHTML=prompt("Inserisci il tuo colore preferito")
-
-// // Controllo se collegati e funzionanti
-// console.log(elementNome)
-// console.log(elementCognome)
-// console.log(elementColore)
+/use scrict/
 
 
-
-// Collego la variabile al id dell html
+// Collego la variabile
 
 const elementPassword = document.getElementById("password");
-
-elementPassword.innerHTML = "LA TUA PASSWORD: ";
+const elementNome=prompt("Inserisci il tuo nome");
+const elementCognome= prompt("Inserisci il tuo cognome");
+const elementColore=prompt("Inserisci il tuo colore preferito");
+const elementNumero=Math.floor(Math.random() * 1000) +1;
 
 // Controllo se funzionante
 
-console.log(elementPassword);
+console.log("nome:",elementNome);
+console.log("cognome:",elementCognome);
+console.log("colore:",elementColore);
+console.log("Numero:",elementNumero);
 
 // Inserisco gli input del prompt all interno della pagina html
 
-// elementPassword.innerHTML+=prompt("Inserisci il tuo nome") + prompt("Inserisci il tuo cognome") + prompt("Inserisci il tuo colore preferito")+"17"
 
-elementPassword.innerHTML += prompt("Inserisci il tuo nome") + prompt("Inserisci il tuo cognome") + prompt("Inserisci il tuo colore preferito") + Math.round(Math.random() * 1000)
+elementPassword.innerHTML = "LA TUA PASSWORD: " +elementNome+elementCognome+elementColore+elementNumero ;
 
 // Controllo se funzionante
 
-console.log(elementPassword);
+console.log(elementPassword.innerHTML);
